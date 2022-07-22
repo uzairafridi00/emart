@@ -1,25 +1,27 @@
 import React from "react";
+import Products from "./Products";
 
 function Home() {
   return (
     <>
       <div className="hero">
-        <div class="card text-bg-dark text-white border-0">
+        <div className="card text-bg-dark text-white border-0">
           <img
             src="/assets/images/bg.jpg"
-            class="card-img"
+            class="card-img img-fluid"
             alt="Background"
             height="710px"
           />
-          <div class="card-img-overlay d-flex flex-column justify-content-around">
+          <div className="card-img-overlay d-flex flex-column justify-content-around">
             <div className="containter">
-              <h5 class="card-title display-3 fw-bolder mb-0">New SEASON ARRIVALS</h5>
-              <p class="card-text lead fs-2">
+              <h5 className="card-title display-3 fw-bolder mb-0">New SEASON ARRIVALS</h5>
+              <p className="card-text lead fs-2">
                CHECKOUT ALL THE TRENDS
               </p>
             </div>
           </div>
         </div>
+        <Products />
       </div>
     </>
   );
