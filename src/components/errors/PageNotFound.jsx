@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./error.css";
 
 function PageNotFound() {
@@ -13,10 +14,10 @@ function PageNotFound() {
               Sorry, an error has occured, Requested page not found!
             </div>
             <div className="error-actions">
-              <a href="/" className="btn btn-primary btn-lg">
+              <Link to="/" className="btn btn-primary btn-lg">
                 <span className="fa fa-home me-1"></span>
                 Take Me Home
-              </a>
+              </Link>
               {/* <a
                 href="http://www.jquery2dotnet.com"
                 className="btn btn-default btn-lg"
