@@ -14,7 +14,7 @@ function PageNotFound() {
             </div>
             <div className="error-actions">
               <a href="/" className="btn btn-primary btn-lg">
-                <span className="glyphicon glyphicon-home"></span>
+                <span className="fa fa-home me-1"></span>
                 Take Me Home
               </a>
               {/* <a
