@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Loading from "./Loading";
+import Loading from "../Loading";
 import ShowProducts from "./ShowProducts";
 
 function Products() {
