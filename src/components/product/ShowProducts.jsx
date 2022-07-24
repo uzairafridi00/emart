@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function ShowProducts(props) {
   const [filter, setFilter] = useState(props.data);
@@ -58,9 +59,9 @@ function ShowProducts(props) {
           <div className="card-body">
             <h5 className="card-title">{product.title.substring(0, 12)}</h5>
             <p className="card-text lead fw-bold">{`Price: ${product.price}`}</p>
-            <a href="#" className="btn btn-outline-dark">
+            <Link to="" className="btn btn-outline-dark">
               Buy Now
-            </a>
+            </Link>
           </div>
         </div>
       ))}
