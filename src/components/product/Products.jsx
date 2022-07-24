@@ -14,7 +14,7 @@ function Products() {
       url: "https://fakestoreapi.com/products",
     })
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         setData(res.data);
       })
       .catch((e) => console.log(e))
