@@ -22,12 +22,4 @@ img:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 20px 0;
-  cursor: pointer;
-}
-
-.card-description {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
 }
