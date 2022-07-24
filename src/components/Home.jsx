@@ -8,7 +8,7 @@ function Home() {
         <div className="card text-bg-dark text-white border-0">
           <img
             src="/assets/images/bg.jpg"
-            class="card-img img-fluid"
+            className="card-img img-fluid"
             alt="Background"
             height="710px"
           />
