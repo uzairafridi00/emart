@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { addCart } from "../../features/action/index";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -9,6 +11,13 @@ function Product() {
   const { id } = useParams();
   const [product, setProduct] = useState([]);
   const [loading, setLoading] = useState(false);
+
+
+  const dispatch =useDispatch();
+  const addProduct = (product) => {
+    dispatch(addCart(product));
+  }
+
 
   useEffect(() => {
     setLoading(true);
@@ -65,7 +74,8 @@ function Product() {
           </p>
           <h3 className="display-6 fw-bold my-4">${product.price}</h3>
           <p className="lead">{product.description}</p>
-          <Link to="" className="btn btn-outline-dark ms-2 px-3 py-2">
+          <Link to="" className="btn btn-outline-dark ms-2 px-3 py-2" onClick={()=>addProduct(product.id
+            )}>
             Add to Cart
           </Link>
           <Link to="/cart" className="btn btn-dark ms-2 px-3 py-2">

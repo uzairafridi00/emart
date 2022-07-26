@@ -10,7 +10,7 @@ export const cartSlice = createSlice({
   name: "cart",
   initialState,
   reducers: {
-    ADDITEM: (state, action) => {
+    ADDITEM: (state=cart, action) => {
       const product = action.payload;
       // Check if the Product is Already exist
       const exist = state.find((x) => x.id === product.id);
@@ -31,7 +31,7 @@ export const cartSlice = createSlice({
       }
     },
 
-    DELETEITEM: (state, action) => {
+    DELETEITEM: (state=cart, action) => {
         const exist1 = state.find((x) => x.id === product.id)
 
         if(exist1.quantity === 1) {
